@@ -2,6 +2,7 @@
 #include <math.h>
 #include <string.h>
 
+// function prototypes
 void hash(void);
 
 int main()
