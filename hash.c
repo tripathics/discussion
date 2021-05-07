@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <string.h> // hash files //
+#include <string.h>
 
 void hash(void);
 
