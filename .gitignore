@@ -1,5 +1,10 @@
+# excluding binary files
 *
+*.exe
 *.*
+
+# including source files
 !*.c
 !*.py
+
 !.gitignore
