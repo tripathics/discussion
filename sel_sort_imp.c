@@ -17,25 +17,25 @@ int main ()
     int arr[n]; // declearing the array of size n //
 
     // Now getting the array elements from the user //
+    printf("Enter the numbers\n");
     for(int i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
     }
 
-    for(int i=0;i<n-1;i++)
-    {   int smallest =i;
-        for(int j=i+1;j<n;j++)
+    for (int i = 0; i < n - 1; i++)
+    {
+        int smallest = i;
+
+        for (int j = i + 1; j < n; j++)
         {
             if (arr[smallest] > arr[j])
             {
-                j=smallest;
+                smallest = j;
             }
-
-           
-           
         }
 
-        swap(&arr[i],&arr[smallest]);
+        swap(&arr[i], &arr[smallest]);
     }
 
     printf("The sorted array is ---");
