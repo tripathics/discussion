@@ -10,32 +10,29 @@ int main(void)
     printf("Enter the elements of 5 X 5 matrices:");
     int mat[5][5];
 
-    for(int i=0;i<5;i++)
+    for (int i = 0; i < 5; i++)
     {
-        for(int j=0;j<5;j++)
+        for (int j = 0;j < 5; j++)
         {
-            scanf("%d",&mat[i][j]);
+            scanf("%i", &mat[i][j]);
         }
     }
+
     // thinking one largest number//
-
-        int largest_row= 0;
-        int largest_column=0;
-
-    for(int i=0;i<5;i++)
+    int largest_row = 0;
+    int largest_column = 0;
+    for (int i = 0; i < 5; i++)
     {   
-        for(int j=0;j<5;j++)
+        for (int j = 0; j < 5; j++)
         {
-         
-            if(mat[i][j]>mat[i+1][j+1])
+            if(mat[largest_row][largest_column] < mat[i][j])
             {
-                largest_row =i+1;
-                largest_column = j+1;
+                largest_row = i;
+                largest_column = j;
             }
-            
         }
     }
-    printf("The largest number in the array is %d ",mat[largest_row][largest_column]);
+    printf("The largest number in the array is %i\n", mat[largest_row][largest_column]);
 
     return 0;
     
