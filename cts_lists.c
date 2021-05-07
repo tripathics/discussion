@@ -10,5 +10,6 @@ node;
 
 int main(void)
 {
-    
+    // list
+    node *list = NULL;
 }
