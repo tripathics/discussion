@@ -30,8 +30,6 @@ int main()
 
     for(int i=0;i<size;i++)
     {
-   
-        
         if(arr[i]>=0)
         {
             counter_positive++;
@@ -41,7 +39,6 @@ int main()
         {
             counter_negative++;
         }
-        
     }
     
     printf("The positive number is %d\n",counter_positive);
