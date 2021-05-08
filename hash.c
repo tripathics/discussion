@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
-#include <string.h> // hash files //
+#include <string.h>
 
+// function prototypes
 void hash(void);
 
 int main()
