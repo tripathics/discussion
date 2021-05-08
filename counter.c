@@ -11,13 +11,13 @@ int main()
    int size;
 
    //entering the size//
-   printf("Enter the size of array");
-   scanf("%d",size);
+   printf("Enter the size of array : ");
+   scanf("%d",&size);
 
    int arr[size];
 
    //getting elements from the user //
-    printf("Enter the elements ");
+    printf("Enter the elements :");
     
     for(int i=0;i<size;i++)
     {
@@ -27,6 +27,9 @@ int main()
     //for positive number //
     int counter_positive =0;
     int counter_negative =0;
+
+    int counter_odd=0;
+    int counter_even=0;
 
     for(int i=0;i<size;i++)
     {
@@ -43,12 +46,26 @@ int main()
             counter_negative++;
         }
         
+        if(arr[i] % 2==0)
+        {
+            counter_even++;
+        }
+        else
+        counter_odd++;
+        
+        
+        
     }
     
-   printf("The positive number is %d",counter_positive);
+    
+        printf("The positive number is %d \n",counter_positive);
 
-   printf("The negative number is %d ",counter_negative);
+        printf("The negative number is %d  \n",counter_negative);
 
+        printf("The odd number is %d  \n",counter_odd);
+
+        printf("The even number is %d  \n",counter_even);
+        
    return 0;
    
     
