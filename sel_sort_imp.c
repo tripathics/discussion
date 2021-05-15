@@ -31,7 +31,7 @@ int main ()
         {
             if (arr[smallest] > arr[j])
             {
-                smallest = j;
+               smallest=j;
             }
         }
 
@@ -41,7 +41,7 @@ int main ()
     printf("The sorted array is ---");
     for(int i=0;i<n;i++)
     {
-        printf("%d",arr[i]);
+        printf("%d \t",arr[i]);
     }
 
     return 0;
