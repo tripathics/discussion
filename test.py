@@ -1,2 +1,3 @@
-for i in range(25, 0, -1):
-    print(i)
+num = int(input("Enter a number: "))
+
+print(f"{num + 2}")
