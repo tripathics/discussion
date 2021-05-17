@@ -23,12 +23,13 @@ int muliply( char card_2);
 int main()
 {
 
-    char card[20];
+    char card[20];// declering the string
 
+    //getting input from the user
     printf("Enter your  card number [ SBI credit card ]");
 
     scanf("%s",card);
-    
+    // calculating the string length so to ensure valid string length
     if(strlen(card) != 16 || strlen(card) <2)
     {
         printf("Enter a valid card number");
@@ -37,23 +38,46 @@ int main()
     }
     
    
-    multiply(card);
+    multiply(card); // calling the muttiply function
 
+    int odd =0;
+    for(int i=1; i <strlen(card); i+=2)
+    {
+        odd = odd+ card[i];
+    }
+
+    if(odd+even % 10==0)   // condition for valid card number //s
+    {
+        printf("the entered card number is valid ");
+
+    }
+    else
+
+        printf("Card number is not valid ");
+
+
+
+    return 0;
 }
+
+
 
 int muliply( char card_2)
 {
-    int temp =0;
+    int temp; // declearing a third variable 
+    int even=0;
 
     for(int i=0; i<strlen(card_2);i+=2;)
     {
-        temp +=  2*card_2[i];
-    }
+        temp =  2* card_2[i];
+        if(temp>=10)
+        {
+            temp=temp-9;
 
-    if(temp>= 10)
-    {
-        temp =temp-9;
-    }
-
+        }
     
+        even = even+temp;
+    }
+    return (even);
+   
 }
